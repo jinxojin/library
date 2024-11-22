@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
-</head>
-<body>
-  <header>
-    <h1>Welcome!</h1>
-  </header>
-  
-  <main>
-    <p>This is a basic HTML boilerplate template.</p>
-  </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TOP Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cutive+Mono&family=Doto:wght@100..900&family=Moul&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to your book library!</h1>
+    </header>
 
-  <footer>
-    <p>&copy; 2024 Your Name</p>
-  </footer>
-  
-  <script src="script.js"></script> <!-- Link to an external JS file -->
-</body>
+    <main>
+      <div id="form-container">
+        <input id="input-title" type="text" placeholder="Title of the book" />
+        <input id="input-author" type="text" placeholder="Author of the book" />
+        <input id="input-pages" type="number" placeholder="Total Pages" />
+        <label for="input-check">Has Finished</label>
+        <input id="input-check" type="checkbox" />
+        <button id="input-btn">Add Book to Library</button>
+      </div>
+      <div id="table-container">
+        <table id="table-library">
+          <tr id="header-row" class="row">
+            <th>Index</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Finished</th>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <p>Made by Jin 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
