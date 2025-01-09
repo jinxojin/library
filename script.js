@@ -9,16 +9,18 @@ const table = document.getElementById("table-library");
 const myLibrary = [];
 
 // Book constructor function
-function Book(title, author, pages, hasRead) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.hasRead = hasRead;
-  this.info = function () {
+class Book {
+  constructor(title, author, pages, hasRead) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.hasRead = hasRead;
+  }
+  info() {
     return `${this.title} by ${this.author}, ${this.pages} pages, ${
       this.hasRead ? "finished reading." : "hasn't read yet."
     }`;
-  };
+  }
 }
 
 // Add a book to the library
